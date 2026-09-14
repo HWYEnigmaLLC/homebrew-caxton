@@ -1,0 +1,16 @@
+# Homebrew tap for Caxton
+
+[Caxton](https://caxton.app/) is a native macOS text and CSV editor for multi-gigabyte files.
+
+```sh
+brew tap hwyenigmallc/caxton
+brew install --cask caxton
+```
+
+The cask installs the same signed and notarized DMG that caxton.app serves, and the app keeps itself current through its built-in updater. To remove it and its support files:
+
+```sh
+brew uninstall --zap --cask caxton
+```
+
+Requires macOS 13 or later.
