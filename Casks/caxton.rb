@@ -1,6 +1,6 @@
 cask "caxton" do
-  version "1.7.3"
-  sha256 "766ddffc5f2d008b323798081f8e40a0d0461230de24ce6a3e4555cd56061c64"
+  version "2.0.0"
+  sha256 "719610a3bf0d5dda54f1293038247c5c0dae26da71fb9d2d192a5db49c916a3a"
 
   url "https://caxton.app/downloads/Caxton-#{version}.dmg"
   name "Caxton"
@@ -16,6 +16,9 @@ cask "caxton" do
   depends_on macos: :ventura
 
   app "Caxton.app"
+  # The caxton command the app bundles (Caxton ▸ Install Command Line
+  # Tool… does the same for a drag-installed copy).
+  binary "#{appdir}/Caxton.app/Contents/Helpers/caxton"
 
   zap trash: [
     "~/Library/Application Support/Caxton",
