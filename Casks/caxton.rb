@@ -1,6 +1,6 @@
 cask "caxton" do
-  version "2.1.0"
-  sha256 "362d229e4face7a57997f399066f5d36c3c5061d4ff13c644602669014f34240"
+  version "2.2.0"
+  sha256 "361f61a8cb50fde7f05b11712dd7d99a783d6c5e4aeba23ce133addaba499491"
 
   url "https://caxton.app/downloads/Caxton-#{version}.dmg"
   name "Caxton"
